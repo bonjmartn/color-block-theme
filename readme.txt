@@ -5,7 +5,7 @@ COLOR BLOCK THEME
 Thanks for using the Color Block theme. This is a fun, bold, and colorful theme that you can use for any type of WordPress website.
 
 The theme's main informational page is at:
-http://www.zenwebthemes.com/shop-themes/color-block/
+https://www.zenwebthemes.com/shop-themes/color-block/
 
 ------------------------------
 FREE AND PREMIUM VERSIONS
@@ -47,10 +47,10 @@ DOCUMENTATION
 ------------------------------
 
 Documentation for this theme is available at:
-http://www.zenwebthemes.com/documentation/color-block/
+https://www.zenwebthemes.com/documentation/color-block/
 
 -------------------------------------------------------
-SPECIFICATIONS
+IMAGE SIZES
 -------------------------------------------------------
 
 Recommended Image Sizes
@@ -59,21 +59,11 @@ The large photo on the top of the homepage: 1200 px width
 The side-by-side photos on the homepage: 600 x 400 px
 Featured images for blog posts and pages, which appear at the top of the page: 1000 x 667 px
 
-Colors
-
-green #009245
-red #FF1F25
-blue #1B1464
-white #FFFFFF
-black #000000
-
-These are the initial colors that you see on the homepage in the theme demo.
-
 ------------------------------
 HOW TO GET HELP
 ------------------------------
 
-Please go to http://www.zenwebthemes.com/support/ to see all of the support options.
+Please go to https://www.zenwebthemes.com/support/ to see all of the support options.
 
 ------------------------------
 UPDATES AND FREEBIES
@@ -87,4 +77,4 @@ If you sign up for the mailing list, you'll get:
 - Other notices about Zen Web Themes, like new theme releases and discounts
 
 Sign up here:
-http://www.zenwebthemes.com/shop-themes/get-all-free-themes/
+https://www.zenwebthemes.com/shop-themes/get-all-free-themes/
