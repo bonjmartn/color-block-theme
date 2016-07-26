@@ -63,7 +63,7 @@ Featured images for blog posts and pages, which appear at the top of the page: 1
 HOW TO GET HELP
 ------------------------------
 
-Please go to https://www.zenwebthemes.com/support/ to see all of the support options.
+Please go to https://www.zenwebthemes.com/theme-support/ to see all of the support options.
 
 ------------------------------
 UPDATES AND FREEBIES
