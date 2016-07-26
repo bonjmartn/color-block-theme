@@ -5,7 +5,7 @@
 function theme_styles() {
 
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap-3.3.5.css' );
-	wp_enqueue_style( 'font_awesome', get_template_directory_uri() . '/font-awesome-4.5.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'font_awesome', get_template_directory_uri() . '/font-awesome-4.6.3/css/font-awesome.min.css' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 }
 
@@ -27,25 +27,44 @@ function theme_js() {
 add_action( 'wp_enqueue_scripts', 'theme_js');
 
 
+if ( ! function_exists( 'colorblock_setup' ) ) :
+
+function colorblock_setup() {
+
+	// Add Support for Feed Links
+
+	add_theme_support( 'automatic-feed-links' );
+
+	// Add Menu Support
+
+	add_theme_support ( 'menus' );
+
+	// Add Thumbnails Support
+
+	add_theme_support( 'post-thumbnails' );
+
+	// Add Support for Flexible Title Tag
+
+	add_theme_support( 'title-tag' );
+
+}
+endif;
+add_action( 'after_setup_theme', 'colorblock_setup' );
+
 // Check for Front Page being used
-function themeslug_filter_front_page_template( $template ) {
+function colorblock_filter_front_page_template( $template ) {
     return is_home() ? '' : $template;
 }
-add_filter( 'frontpage_template', 'themeslug_filter_front_page_template' );
-
-
-// Add Support for Flexible Title Tag
-add_theme_support( 'title-tag' );
-
+add_filter( 'frontpage_template', 'colorblock_filter_front_page_template' );
 
 // Add Support for WooCommerce
-add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
+add_action( 'after_setup_theme', 'colorblock_woocommerce_support' );
+function colorblock_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
 // Add Support for Google Fonts
-function google_fonts() {
+function colorblock_google_fonts() {
   $query_args = array(
     'family' => 'Open+Sans:400,700,700italic,400italic,800,800italic',
     'subset' => 'latin,latin-ext',
@@ -53,24 +72,14 @@ function google_fonts() {
   wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 }
             
-add_action('wp_enqueue_scripts', 'google_fonts');
-
-
-// Add Menu Support
-add_theme_support ( 'menus' );
-
-// Add Thumbnails Support
-add_theme_support( 'post-thumbnails' );
-
+add_action('wp_enqueue_scripts', 'colorblock_google_fonts');
 
 // Content Width Requirement
-if ( ! isset( $content_width ) ) {
-	$content_width = 800;
+
+function colorblock_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'colorblock_content_width', 800 );
 }
-
-// Add Support for Feed Links
-add_theme_support( 'automatic-feed-links' );
-
+add_action( 'after_setup_theme', 'colorblock_content_width', 0 );
 
 // MENUS!
 

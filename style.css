@@ -4,11 +4,11 @@ Theme URI: https://www.zenwebthemes.com/shop-themes/color-block-free/
 Author: Bonnie Martin
 Author URI: https://www.zenwebthemes.com
 Description: Color Block is a bold theme with blocks of color and large featured photos
-Version: 1.1
+Version: 1.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: left-sidebar, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-colors, custom-menu, featured-images, full-width-template, theme-options
-Text Domain: color-block-free-free
+Tags: two-columns, right-sidebar, custom-colors, custom-header, custom-menu, featured-images, footer-widgets, theme-options, blog, photography
+Text Domain: color-block-free
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1038,6 +1038,12 @@ footer h3 {
 	font-weight: 600;
 	font-size: 18px;
 	text-transform: uppercase;
+}
+
+footer a,
+footer a:hover,
+footer a:visited {
+	color: #FFFFFF;
 }
 
 /* General Widget Stuff */
