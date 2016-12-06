@@ -66,7 +66,7 @@ function colorblock_woocommerce_support() {
 // Add Support for Google Fonts
 function colorblock_google_fonts() {
   $query_args = array(
-    'family' => 'Open+Sans:400,700,700italic,400italic,800,800italic',
+    'family' => 'Open+Sans:400,700,700italic,400italic,800,800italic|Roboto:400,700,700italic,400italic,800,800italic|Lato:400,700,700italic,400italic,800,800italic|Merriweather:400,700,700italic,400italic,800,800italic|Covered+By+Your+Grace:400,700,700italic,400italic,800,800italic|Oswald:400,700,700italic,400italic,800,800italic|Lora:400,700,700italic,400italic,800,800italic|Montserrat:400,700,700italic,400italic,800,800italic|Raleway:400,700,700italic,400italic,800,800italic|Source+Sans+Pro:400,700,700italic,400italic,800,800italic|Droid+Sans:400,700,700italic,400italic,800,800italic|Shadows+Into+Light:400,700,700italic,400italic,800,800italic',
     'subset' => 'latin,latin-ext',
   );
   wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
@@ -87,7 +87,7 @@ function register_theme_menus() {
 
 	register_nav_menus (
 		array (
-			'header-menu' => __( 'Header Menu', 'color-block-free')
+			'header-menu' => __( 'Header Menu', 'color-block')
 	));
 }
 

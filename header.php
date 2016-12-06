@@ -17,41 +17,42 @@
 
 <div class="full-container">
 
-<div class="main-header group">
-    <div class="container-1000">
-        <nav class="navbar navbar-inverse" role="navigation">
+  <div class="main-header group">
+      <div class="container-1000">
+          <nav class="navbar navbar-inverse" role="navigation">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
-                <?php if( get_theme_mod( 'colorblock_logo' ) != "" ): ?>
-                <img src="<?php echo get_theme_mod( 'colorblock_logo' ); ?>">
-                <?php endif; ?></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right" id="defaultNavbar1">
-                <?php
-                wp_nav_menu( array(
-                  'menu'              => 'header-menu',
-                  'theme_location'    => 'header-menu',
-                  'depth'             => 2,
-                  'container'         => 'false',
-                  'container_class'   => 'collapse navbar-collapse',
-                  'container_id'      => 'defaultNavbar1',
-                  'menu_class'        => 'nav navbar-nav',
-                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                  'walker'            => new wp_bootstrap_navwalker())
-                );
-                ?>
-            </div>
-        </nav>
-    </div>
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
+                    <?php if( get_theme_mod( 'colorblock_logo' ) != "" ): ?>
+                      <img src="<?php echo get_theme_mod( 'colorblock_logo' ); ?>">
+                    <?php endif; ?>
+                  </a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right" id="defaultNavbar1">
+                  <?php
+                  wp_nav_menu( array(
+                    'menu'              => 'header-menu',
+                    'theme_location'    => 'header-menu',
+                    'depth'             => 2,
+                    'container'         => 'false',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'defaultNavbar1',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                  );
+                  ?>
+              </div>
+          </nav>
+      </div>
+  </div>
+
 </div>
-
-</div> <!-- end of full container -->

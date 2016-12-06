@@ -4,13 +4,11 @@
 ?>
 <?php get_header(); ?>
 
-
 <div class="page-topper">
   <?php if ( has_post_thumbnail() ) : ?>
     <?php the_post_thumbnail(); ?>
   <?php endif; ?>
 </div>
-
 
 <div class="page-header">
   <div class="page-header-1000">
@@ -32,7 +30,7 @@
         </div>
 
         <?php endwhile; else : ?>
-          <p><?php _e( 'Sorry, no posts matched your criteria.', 'color-block-free' ); ?></p>
+          <p><?php _e( 'Sorry, no posts matched your criteria.', 'color-block' ); ?></p>
         <?php endif; ?> 
 
       </div>

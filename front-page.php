@@ -82,14 +82,17 @@
       <?php the_content(); ?>
 
       <?php endwhile; else : ?>
-      <p><?php _e( 'Sorry, no posts matched your criteria.', 'color-block-free' ); ?></p>
+      <p><?php _e( 'Sorry, no posts matched your criteria.', 'color-block' ); ?></p>
 
       <?php endif; ?> 
 
       <!-- show latest blog post -->
 
       <?php
-      $args = array( 'posts_per_page' => 1, 'orderby' => 'date' );
+      $args = array( 'posts_per_page' => 1,
+                      'orderby' => 'date',
+                      'post__in'  => get_option( 'sticky_posts' ),
+                      'ignore_sticky_posts' => 1 );
       $postslist = get_posts( $args );
       foreach ( $postslist as $post ) :
       setup_postdata( $post ); ?> 

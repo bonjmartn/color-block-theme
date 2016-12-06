@@ -1,14 +1,14 @@
 /*
-Theme Name: Color Block Free
-Theme URI: https://www.zenwebthemes.com/shop-themes/color-block-free/
+Theme Name: Color Block
+Theme URI: https://www.zenwebthemes.com/shop-themes/color-block/
 Author: Bonnie Martin
 Author URI: https://www.zenwebthemes.com
 Description: Color Block is a bold theme with blocks of color and large featured photos
 Version: 1.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, right-sidebar, custom-colors, custom-header, custom-menu, featured-images, footer-widgets, theme-options, blog, photography
-Text Domain: color-block-free
+Tags: two-columns, left-sidebar, right-sidebar, full-width-template, custom-colors, custom-header, custom-menu, featured-images, footer-widgets, theme-options, blog, photography
+Text Domain: color-block
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -336,13 +336,13 @@ textarea {
 /* Links */
 a,
 a:visited {
-	color: #FF1F25;
+	color: #000000;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #FF1F25;
+	color: #000000;
 }
 
 /* Alignment - WordPress uses these classes to align images and other elements inside the editor. */
@@ -686,8 +686,7 @@ a:active {
 /* =Content
 ----------------------------------------------- */
 
-/* Styles for posts and pages 
-Some of these are left blank so that you can reference them for your own styling use */
+/* Styles for posts and pages */
 
 .sticky { /* Style your sticky posts. This class is applied to the same element as .hentry below. */
 	
@@ -1360,8 +1359,6 @@ solves floating problems, by forcing the section to self clear its children (aka
 
 
 /* MEDIA STYLES ------------ */
-
-
 
 
 /* General Stuff */

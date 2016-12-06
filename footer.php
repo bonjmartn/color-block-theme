@@ -36,7 +36,7 @@
 
         <!-- Bottom Strip -->
         <div class="footer-strip">
-          <span id="copyright">&copy; <?php echo date ('Y') ?> <?php bloginfo('name'); ?> &nbsp; &bull; &nbsp; Website design by <a href="http://www.zenwebthemes.com/">ZenWebThemes.com</a></span>
+          <span id="copyright">&copy; <?php echo date ('Y') ?> <?php bloginfo('name'); ?> &nbsp; &bull; &nbsp; Color Block Theme by <a href="https://www.zenwebthemes.com/">ZenWebThemes.com</a></span>
         </div>
 
     </div>

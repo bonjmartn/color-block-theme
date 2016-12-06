@@ -10,7 +10,6 @@
   <?php endif; ?>
 </div>
 
-
 <div class="page-header">
   <div class="page-header-1000">
     <h1><?php the_title(); ?></h1>
@@ -30,7 +29,7 @@
       </div>
 
       <?php endwhile; else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.', 'color-block-free' ); ?></p>
+        <p><?php _e( 'Sorry, no posts matched your criteria.', 'color-block' ); ?></p>
       <?php endif; ?> 
 
       </div>
