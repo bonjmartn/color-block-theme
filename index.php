@@ -53,8 +53,6 @@
 
         <?php endif; ?>
 
-        <?php endif; ?>
-
                 <div class="pagination">
 
                     <?php the_posts_pagination( array( 

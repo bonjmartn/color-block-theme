@@ -39,3 +39,9 @@ Version 1.6
 ---------------------------------------
 
 - Security update for URLs the user enters for social media profiles and similar fields.
+
+Version 1.7
+12/7/16
+---------------------------------------
+
+- Layout updates and other minor fixes for WordPress version 4.7.
