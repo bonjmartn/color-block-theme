@@ -27,7 +27,7 @@ IMAGE SIZES
 
 Recommended Image Sizes
 
-The large photo on the top of the homepage: 1000 px width
+The large photo on the top of the homepage: 1200 px width
 The side-by-side photos on the homepage: 600 x 400 px
 Featured images for blog posts and pages, which appear at the top of the page: 1000 x 667 px
 
